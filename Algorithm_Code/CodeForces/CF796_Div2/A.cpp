@@ -30,7 +30,7 @@ int main()
         }
         else
         {
-            if ((n & (n - 1)) == 0) //判断是否为2的次幂
+            if ((n & (n - 1)) == 0) //判断是否为2的次幂O(logN)  O（N)
             {
                 cout << lowbit(n) + 1 << endl;
             }
